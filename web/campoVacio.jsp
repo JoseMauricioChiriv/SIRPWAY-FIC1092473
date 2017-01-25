@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1>Complete los campos para realizar el registro exitosamente</h1>
-        <a href="index.jsp">Volver</a>
+        <a href="nuevaVenta.jsp">Volver</a>
     </body>
 </html>

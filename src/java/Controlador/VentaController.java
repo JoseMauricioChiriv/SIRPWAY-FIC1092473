@@ -8,6 +8,7 @@ package Controlador;
 import static Entity.Venta_.fechaVenta;
 import Modelo.venta;
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -36,11 +37,12 @@ public class VentaController extends HttpServlet {
         String sucursal = request.getParameter("idSucursal");
         
         if (fecha.equals("") || iva.equals("") || mesero.equals("") || sucursal.equals("")) {
-            request.getRequestDispatcher("Pages/campoVacio.jsp").forward(request, response);
+            request.getRequestDispatcher("campoVacio.jsp").forward(request, response);
         }
         else{
             venta v1 = new venta(fechaVenta, iva, mesero, sucursal);
-            request.getRequestDispatcher("Pages/exito.jsp").forward(request, response);
+            request.getSession().setAttribute("Venta1", v1);
+            request.getRequestDispatcher("exito.jsp").forward(request, response);
         }
     }
 
