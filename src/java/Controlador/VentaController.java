@@ -8,7 +8,6 @@ package Controlador;
 import static Entity.Venta_.fechaVenta;
 import Modelo.venta;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -41,7 +40,7 @@ public class VentaController extends HttpServlet {
         }
         else{
             venta v1 = new venta(fechaVenta, iva, mesero, sucursal);
-            request.getSession().setAttribute("Venta1", v1);
+            request.getSession().setAttribute("fechaVenta", v1);
             request.getRequestDispatcher("exito.jsp").forward(request, response);
         }
     }

@@ -27,7 +27,6 @@ public class venta {
     }
 
     public venta(SingularAttribute<Venta, Date> fechaVenta, String iva, String mesero, String sucursal) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public Date getFechaVenta() {

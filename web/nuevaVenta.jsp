@@ -19,6 +19,7 @@
             Mesero que realizo la venta: <input type="text" name="idMesero" /><br/>
             Suxursal que se realizo la venta: <input type="text" name="idSucursal" /><br/>
             <input type="submit" value="Enviar Informacion" />
+            <a href="index.xhtml">Regresar a inicio</a>
         </form>
     </body>
 </html>
