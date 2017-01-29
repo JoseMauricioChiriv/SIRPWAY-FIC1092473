@@ -14,10 +14,10 @@
     <body>
         <h1>Formulario</h1>
         <form action="ventaController.do" method="post">
-            Fecha de la venta: <input type="date" name="fechaVenta" /><br/>
-            Iva de la venta: <input type="number" name="ivaVenta" /><br/>
-            Mesero que realizo la venta: <input type="text" name="idMesero" /><br/>
-            Suxursal que se realizo la venta: <input type="text" name="idSucursal" /><br/>
+            Fecha de la venta: <input type="date" name="fecha" /><br/>
+            Iva de la venta: <input type="number" name="iva" /><br/>
+            Mesero que realizo la venta: <input type="text" name="Mesero" /><br/>
+            Suxursal que se realizo la venta: <input type="text" name="Sucursal" /><br/>
             <input type="submit" value="Enviar Informacion" />
             <a href="index.xhtml">Regresar a inicio</a>
         </form>

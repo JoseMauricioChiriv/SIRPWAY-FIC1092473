@@ -14,14 +14,14 @@ import javax.persistence.metamodel.SingularAttribute;
  * @author Mauricio
  */
 public class venta {
-    private Date fechaVenta;
-    private int ivaVenta;
+    private Date fecha;
+    private int iva;
     private int Mesero;
     private int sucursal;
 
-    public venta(Date fechaVenta, int ivaVenta, int Mesero, int sucursal) {
-        this.fechaVenta = fechaVenta;
-        this.ivaVenta = ivaVenta;
+    public venta(Date fecha, int iva, int Mesero, int sucursal) {
+        this.fecha = fecha;
+        this.iva = iva;
         this.Mesero = Mesero;
         this.sucursal = sucursal;
     }
@@ -29,20 +29,20 @@ public class venta {
     public venta(SingularAttribute<Venta, Date> fechaVenta, String iva, String mesero, String sucursal) {
     }
 
-    public Date getFechaVenta() {
-        return fechaVenta;
+    public Date getFecha() {
+        return fecha;
     }
 
-    public void setFechaVenta(Date fechaVenta) {
-        this.fechaVenta = fechaVenta;
+    public void setFecha(Date fechaVenta) {
+        this.fecha = fechaVenta;
     }
 
-    public int getIvaVenta() {
-        return ivaVenta;
+    public int getIva() {
+        return iva;
     }
 
-    public void setIvaVenta(int ivaVenta) {
-        this.ivaVenta = ivaVenta;
+    public void setIva(int ivaVenta) {
+        this.iva = ivaVenta;
     }
 
     public int getMesero() {

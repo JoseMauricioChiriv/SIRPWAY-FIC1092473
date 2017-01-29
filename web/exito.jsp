@@ -6,7 +6,7 @@
 <%@page import="Modelo.venta"%>
 <%
 
-    venta v1 = (venta)request.getSession().getAttribute("fechaVenta");
+    venta Venta1 = (venta)request.getSession().getAttribute("Venta1");
 
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -18,10 +18,10 @@
     </head>
     <body>
         <h1>Felicitaciones, su registro fue exitoso</h1>
-        <p>Fecha venta: <%= v1.getFechaVenta() %></p>
-        <p>Iva venta: <%= v1.getIvaVenta() %></p>
-        <p>Mesero venta: <%= v1.getMesero() %></p>
-        <p>Sucursal venta: <%= v1.getSucursal() %></p>
+        <p>Fecha venta: <%= Venta1.getFecha() %></p>
+        <p>Iva venta: <%= Venta1.getIva() %></p>
+        <p>Mesero venta: <%= Venta1.getMesero() %></p>
+        <p>Sucursal venta: <%= Venta1.getSucursal() %></p>
         <a href="nuevaVenta.jsp">Volver</a>
     </body>
 </html>

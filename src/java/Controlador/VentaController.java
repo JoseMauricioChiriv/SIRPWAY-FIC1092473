@@ -30,17 +30,17 @@ public class VentaController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String fecha = request.getParameter("fechaVenta");
-        String iva = request.getParameter("ivaVenta");
-        String mesero = request.getParameter("idMesero");
-        String sucursal = request.getParameter("idSucursal");
+        String fecha = request.getParameter("fecha");
+        String iva = request.getParameter("iva");
+        String mesero = request.getParameter("Mesero");
+        String sucursal = request.getParameter("Sucursal");
         
         if (fecha.equals("") || iva.equals("") || mesero.equals("") || sucursal.equals("")) {
             request.getRequestDispatcher("campoVacio.jsp").forward(request, response);
         }
         else{
-            venta v1 = new venta(fechaVenta, iva, mesero, sucursal);
-            request.getSession().setAttribute("fechaVenta", v1);
+            venta Venta1 = new venta(fechaVenta, iva, mesero, sucursal);
+            request.getSession().setAttribute("Venta1", Venta1);
             request.getRequestDispatcher("exito.jsp").forward(request, response);
         }
     }
